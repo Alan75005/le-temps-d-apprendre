@@ -1,9 +1,7 @@
-const header=document.querySelector('.header');
-window.addEventListener('scroll',()=>{ if(header) header.classList.toggle('scrolled',window.scrollY>40); });
-const openBtn=document.querySelector('.index-btn');
-const panel=document.querySelector('.index-panel');
-const closeBtn=document.querySelector('.index-close');
-if(openBtn&&panel){openBtn.addEventListener('click',()=>panel.classList.add('open'));}
-if(closeBtn&&panel){closeBtn.addEventListener('click',()=>panel.classList.remove('open'));}
-if(panel){panel.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>panel.classList.remove('open')))}
-document.querySelectorAll('.prisme-item').forEach(el=>el.addEventListener('click',()=>{document.querySelectorAll('.prisme-item').forEach(x=>x.classList.remove('active'));el.classList.add('active')}));
+const panel=document.getElementById('indexPanel');
+document.getElementById('indexBtn').onclick=()=>panel.classList.add('open');
+document.getElementById('closeBtn').onclick=()=>panel.classList.remove('open');
+panel.querySelectorAll('a').forEach(a=>a.onclick=()=>panel.classList.remove('open'));
+document.getElementById('unfold').onclick=()=>document.getElementById('hiddenThought').classList.toggle('show');
+window.addEventListener('scroll',()=>{const h=document.documentElement;document.querySelector('.progress').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'});
+document.querySelectorAll('.time-nav button').forEach(b=>b.onclick=()=>{document.querySelector('.stories').scrollIntoView({behavior:'smooth'});});
