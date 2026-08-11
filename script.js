@@ -1,1 +1,2 @@
-const p=document.getElementById("panel");document.getElementById("menu").onclick=()=>p.classList.add("open");document.getElementById("close").onclick=()=>p.classList.remove("open");p.querySelectorAll("a").forEach(a=>a.onclick=()=>p.classList.remove("open"));
+const panel=document.getElementById("menuPanel");document.getElementById("menuBtn").onclick=()=>panel.classList.add("open");document.getElementById("closeBtn").onclick=()=>panel.classList.remove("open");panel.querySelectorAll("a").forEach(a=>a.onclick=()=>panel.classList.remove("open"));
+const el=document.getElementById("typeText");const text=el.dataset.text;let i=0;function type(){if(i<text.length){el.textContent+=text[i++];setTimeout(type,58+Math.random()*55)}}setTimeout(type,900);

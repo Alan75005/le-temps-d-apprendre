@@ -1,30 +1,35 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Le Temps d’apprendre — V0.2</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body>
-<header><a href="#" class="wordmark">LE TEMPS D’APPRENDRE</a><span>UNE REVUE DU COLLÈGE SÉVIGNÉ · PARIS</span><button id="menu">INDEX +</button></header>
-<div class="menu" id="panel"><button id="close">FERMER ×</button><nav><a href="#une">01 — À LA UNE</a><a href="#prisme">02 — MÉTHODE</a><a href="#idees">03 — IDÉES</a><a href="#terrain">04 — TERRAIN</a></nav></div>
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Le Temps d’apprendre — V0.3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head><body>
+<header class="topbar"><a class="wordmark" href="index.html">LE TEMPS D’APPRENDRE</a><span>UNE REVUE DU COLLÈGE SÉVIGNÉ · PARIS</span><button id="menuBtn">INDEX +</button></header>
+<aside class="menu" id="menuPanel"><button id="closeBtn">FERMER ×</button><nav><a href="#une">01 — À LA UNE</a><a href="#prisme">02 — MÉTHODE</a><a href="#idees">03 — IDÉES</a><a href="#terrain">04 — TERRAIN</a></nav></aside>
 <main>
 <section class="cover" id="une">
-<div class="cover-no">01</div><div class="cover-meta">ESSAI / IA × ÉDUCATION<br>ALAN YVON · 12 MIN</div>
-<div class="photo hero-photo"><img src="https://cdn.loc.gov/service/pnp/cph/3b10000/3b18000/3b18100/3b18141r.jpg" alt="Deux élèves visitant la Library of Congress, 1899"><small>Frances Benjamin Johnston, 1899 · Library of Congress · domaine public</small></div>
-<h1><span>L’IA PEUT-ELLE</span><span>NOUS AIDER</span><span>À PENSER</span><em>sans penser à notre place ?</em></h1>
-<a href="article-ia.html" class="read">LIRE L’ESSAI ↗</a>
-<div class="quote">« Ce que l’élève délègue<br><i>ne doit pas être ce qu’il est venu apprendre.</i> »</div>
+  <div class="ghost">01</div>
+  <div class="kicker">01 / ESSAI<br>IA × ÉDUCATION<br><b>ALAN YVON · 12 MIN</b></div>
+  <figure class="hero-photo"><img src="https://cdn.loc.gov/service/pnp/cph/3b10000/3b18000/3b18100/3b18141r.jpg" alt="Deux élèves à la Library of Congress en 1899"><figcaption>Frances Benjamin Johnston, 1899 · Library of Congress</figcaption></figure>
+  <h1><span>L’IA PEUT-ELLE</span><span>NOUS AIDER</span><span>À PENSER</span></h1>
+  <div class="type-line"><span id="typeText" data-text="sans penser à notre place ?"></span><i aria-hidden="true"></i></div>
+  <a class="read" href="article-ia.html">LIRE L’ESSAI — 12 MIN <b>↗</b></a>
 </section>
 
-<section class="spread">
-<div class="spread-num">98</div><div class="spread-copy"><span>LE TEMPS D’APPRENDRE / 01</span><h2>Une revue qui traite l’éducation comme un <em>sujet de civilisation.</em></h2><p>Expérience de terrain, sciences de l’apprentissage, philosophie, intelligence artificielle et regards internationaux.</p></div>
-<div class="photo lab"><img src="https://cdn.loc.gov/service/pnp/cph/3a10000/3a17000/3a17700/3a17787r.jpg" alt="Laboratoire de chimie, Central High School, 1899"><small>Frances Benjamin Johnston, 1899 · Library of Congress · domaine public</small></div>
-<div class="vertical">PENSER L’ÉCOLE<br>DEPUIS L’ÉCOLE</div>
+<section class="manifesto">
+ <div class="big-no">98</div><div class="manifesto-copy"><span>LE TEMPS D’APPRENDRE / 01</span><h2>Traiter l’éducation comme un <em>sujet de civilisation.</em></h2><p>Expérience de terrain, sciences de l’apprentissage, philosophie, intelligence artificielle et regards internationaux.</p></div>
+ <figure><img src="https://cdn.loc.gov/service/pnp/cph/3a10000/3a17000/3a17700/3a17787r.jpg" alt="Laboratoire de chimie, Central High School, 1899"><figcaption>F. B. Johnston · Library of Congress</figcaption></figure>
 </section>
 
-<section class="prisme" id="prisme"><div class="section-index">02 / UNE MÉTHODE</div><h2>PRISME</h2><div class="prisme-intro">Utiliser l’intelligence artificielle<br><em>sans lui déléguer l’apprentissage.</em></div>
+<section class="prisme" id="prisme"><div class="section-tag">02 / UNE MÉTHODE</div><h2>PRISME</h2><p class="lead">Utiliser l’intelligence artificielle<br><em>sans lui déléguer l’apprentissage.</em></p>
 <div class="steps"><article><b>P</b><h3>PENSE</h3><p>Commence sans la machine.</p></article><article><b>R</b><h3>RÉALISE</h3><p>Produis une première réponse.</p></article><article><b>I</b><h3>INTERROGE</h3><p>Demande objection et explication.</p></article><article><b>S</b><h3>SÉLECTIONNE</h3><p>Soumets l’IA à ton jugement.</p></article><article><b>M</b><h3>MODIFIE</h3><p>Reprends la main.</p></article><article><b>E</b><h3>EXPLIQUE</h3><p>Prouve que tu as appris.</p></article></div></section>
 
-<section class="ideas" id="idees"><div class="section-index">03 / LES IDÉES</div>
-<a class="idea leadership" href="article-leadership.html"><span>DIRIGER / 08 MIN</span><h2>UNE ÉCOLE<br>POSSÈDE TOUJOURS<br><em>DEUX ORGANIGRAMMES.</em></h2><p>Le premier dit qui dirige. Le second révèle qui influence.</p><b>↗</b></a>
-<div class="photo library"><img src="https://cdn.loc.gov/service/pnp/cph/3a00000/3a07000/3a07900/3a07933v.jpg" alt="Visite à la Library of Congress, 1899"><small>Frances Benjamin Johnston, 1899 · Library of Congress · domaine public</small></div>
-<a class="idea explain" href="article-expliquer.html"><span>ÉVALUER / 06 MIN</span><h2>EXPLIQUER</h2><h3>La nouvelle preuve<br>d’apprentissage.</h3><p>Quand l’IA peut produire le devoir, l’oral retrouve une fonction décisive.</p><b>↗</b></a>
+<section class="ideas" id="idees"><div class="section-tag">03 / LES IDÉES</div>
+<a class="story leadership" href="article-leadership.html"><small>DIRIGER / 08 MIN</small><h2>UNE ÉCOLE<br>POSSÈDE TOUJOURS<br><em>DEUX ORGANIGRAMMES.</em></h2><p>Le premier dit qui dirige. Le second révèle qui influence.</p><strong>↗</strong></a>
+<figure class="idea-photo"><img src="https://cdn.loc.gov/service/pnp/cph/3a00000/3a07000/3a07900/3a07933v.jpg" alt="Visite d’élèves à la Library of Congress, 1899"><figcaption>F. B. Johnston · Library of Congress</figcaption></figure>
+<a class="story explain" href="article-expliquer.html"><small>ÉVALUER / 06 MIN</small><h2>EXPLIQUER</h2><h3>La nouvelle preuve<br>d’apprentissage.</h3><p>Quand l’IA peut produire le devoir, l’oral retrouve une fonction décisive.</p><strong>↗</strong></a>
 </section>
 
-<section class="terrain" id="terrain"><div class="giant">04</div><div><span>DEPUIS LE TERRAIN</span><h2>PENSER L’ÉCOLE<br><em>DEPUIS L’ÉCOLE.</em></h2></div><p>Une situation réelle devient une question. La pratique rencontre la recherche. L’idée est testée, discutée, puis seulement institutionnalisée.</p></section>
-<section class="end"><span>LA LETTRE</span><h2>Recevoir un texte.<br><em>Pas une notification.</em></h2><form onsubmit="event.preventDefault()"><input placeholder="votre@email.fr"><button>S’INSCRIRE ↗</button></form></section>
-</main><footer><span>LE TEMPS D’APPRENDRE</span><span>V0.2 · AOÛT 2026</span></footer><script src="script.js"></script></body></html>
+<section class="terrain" id="terrain"><div class="terrain-no">04</div><div><span>DEPUIS LE TERRAIN</span><h2>PENSER L’ÉCOLE<br><em>DEPUIS L’ÉCOLE.</em></h2></div><p>Une situation réelle devient une question. La pratique rencontre la recherche. L’idée est testée, discutée, puis seulement institutionnalisée.</p></section>
+<section class="letter"><span>LA LETTRE</span><h2>Recevoir un texte.<br><em>Pas une notification.</em></h2><form onsubmit="event.preventDefault()"><input aria-label="Email" placeholder="votre@email.fr"><button>S’INSCRIRE ↗</button></form></section>
+</main><footer><span>LE TEMPS D’APPRENDRE</span><span>V0.3 · AOÛT 2026</span></footer><script src="script.js"></script></body></html>
