@@ -1,7 +1,1 @@
-const panel=document.getElementById('indexPanel');
-document.getElementById('indexBtn').onclick=()=>panel.classList.add('open');
-document.getElementById('closeBtn').onclick=()=>panel.classList.remove('open');
-panel.querySelectorAll('a').forEach(a=>a.onclick=()=>panel.classList.remove('open'));
-document.getElementById('unfold').onclick=()=>document.getElementById('hiddenThought').classList.toggle('show');
-window.addEventListener('scroll',()=>{const h=document.documentElement;document.querySelector('.progress').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'});
-document.querySelectorAll('.time-nav button').forEach(b=>b.onclick=()=>{document.querySelector('.stories').scrollIntoView({behavior:'smooth'});});
+const p=document.getElementById("panel");document.getElementById("menu").onclick=()=>p.classList.add("open");document.getElementById("close").onclick=()=>p.classList.remove("open");p.querySelectorAll("a").forEach(a=>a.onclick=()=>p.classList.remove("open"));

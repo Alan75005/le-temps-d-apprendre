@@ -1,105 +1,30 @@
-<!doctype html>
-<html lang="fr">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Le Temps d’apprendre — V0.1</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div class="progress"></div>
-<header>
-  <a class="mini" href="#">COLLÈGE SÉVIGNÉ · PARIS</a>
-  <button id="indexBtn">INDEX +</button>
-</header>
-
-<div id="indexPanel" class="index-panel">
-  <button id="closeBtn">FERMER ×</button>
-  <div class="index-title">INDEX</div>
-  <nav>
-    <a href="#apprendre">APPRENDRE <small>12</small></a>
-    <a href="#transmettre">TRANSMETTRE <small>08</small></a>
-    <a href="#diriger">DIRIGER <small>07</small></a>
-    <a href="#penser">PENSER <small>06</small></a>
-    <a href="#regarder">REGARDER <small>09</small></a>
-  </nav>
-</div>
-
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Le Temps d’apprendre — V0.2</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body>
+<header><a href="#" class="wordmark">LE TEMPS D’APPRENDRE</a><span>UNE REVUE DU COLLÈGE SÉVIGNÉ · PARIS</span><button id="menu">INDEX +</button></header>
+<div class="menu" id="panel"><button id="close">FERMER ×</button><nav><a href="#une">01 — À LA UNE</a><a href="#prisme">02 — MÉTHODE</a><a href="#idees">03 — IDÉES</a><a href="#terrain">04 — TERRAIN</a></nav></div>
 <main>
-<section class="mast">
-  <div class="issue">REVUE D’ÉDUCATION · 01 / 2026</div>
-  <h1><span>LE TEMPS</span><span>D’APPRENDRE</span></h1>
-  <div class="manifesto">Comprendre comment nous apprenons.<br><em>Et ce que cela change au monde.</em></div>
-  <div class="orbit">01</div>
+<section class="cover" id="une">
+<div class="cover-no">01</div><div class="cover-meta">ESSAI / IA × ÉDUCATION<br>ALAN YVON · 12 MIN</div>
+<div class="photo hero-photo"><img src="https://cdn.loc.gov/service/pnp/cph/3b10000/3b18000/3b18100/3b18141r.jpg" alt="Deux élèves visitant la Library of Congress, 1899"><small>Frances Benjamin Johnston, 1899 · Library of Congress · domaine public</small></div>
+<h1><span>L’IA PEUT-ELLE</span><span>NOUS AIDER</span><span>À PENSER</span><em>sans penser à notre place ?</em></h1>
+<a href="article-ia.html" class="read">LIRE L’ESSAI ↗</a>
+<div class="quote">« Ce que l’élève délègue<br><i>ne doit pas être ce qu’il est venu apprendre.</i> »</div>
 </section>
 
-<section class="hero" id="apprendre">
-  <div class="hero-label">DOSSIER 01 <span>ÉDUCATION × IA</span></div>
-  <div class="visual">
-    <div class="sun"></div><div class="prism"></div>
-    <div class="beam beam1"></div><div class="beam beam2"></div><div class="beam beam3"></div>
-    <span class="visual-note">LA MACHINE<br>SAIT RÉPONDRE.</span>
-  </div>
-  <div class="hero-copy">
-    <h2>L’IA doit-elle nous aider à <i>penser</i><br>ou penser à notre place&nbsp;?</h2>
-    <p>À mesure que les machines apprennent à écrire, résumer et raisonner, l’école doit apprendre aux élèves une compétence nouvelle : savoir ce qu’ils ne doivent pas déléguer.</p>
-    <div class="byline">ALAN YVON <span>12 MIN · ESSAI</span></div>
-    <a class="arrow-link" href="article-ia.html">LIRE L’ESSAI <b>↗</b></a>
-  </div>
+<section class="spread">
+<div class="spread-num">98</div><div class="spread-copy"><span>LE TEMPS D’APPRENDRE / 01</span><h2>Une revue qui traite l’éducation comme un <em>sujet de civilisation.</em></h2><p>Expérience de terrain, sciences de l’apprentissage, philosophie, intelligence artificielle et regards internationaux.</p></div>
+<div class="photo lab"><img src="https://cdn.loc.gov/service/pnp/cph/3a10000/3a17000/3a17700/3a17787r.jpg" alt="Laboratoire de chimie, Central High School, 1899"><small>Frances Benjamin Johnston, 1899 · Library of Congress · domaine public</small></div>
+<div class="vertical">PENSER L’ÉCOLE<br>DEPUIS L’ÉCOLE</div>
 </section>
 
-<section class="time-nav">
-  <div class="time-intro"><span>LE TEMPS EST AUSSI<br>UNE MANIÈRE DE LIRE.</span><strong>Combien en avez-vous&nbsp;?</strong></div>
-  <button data-time="3">03’<small>DÉCOUVRIR</small></button>
-  <button data-time="8">08’<small>COMPRENDRE</small></button>
-  <button data-time="20">20’<small>APPROFONDIR</small></button>
-  <button data-time="all">∞<small>J’AI LE TEMPS</small></button>
+<section class="prisme" id="prisme"><div class="section-index">02 / UNE MÉTHODE</div><h2>PRISME</h2><div class="prisme-intro">Utiliser l’intelligence artificielle<br><em>sans lui déléguer l’apprentissage.</em></div>
+<div class="steps"><article><b>P</b><h3>PENSE</h3><p>Commence sans la machine.</p></article><article><b>R</b><h3>RÉALISE</h3><p>Produis une première réponse.</p></article><article><b>I</b><h3>INTERROGE</h3><p>Demande objection et explication.</p></article><article><b>S</b><h3>SÉLECTIONNE</h3><p>Soumets l’IA à ton jugement.</p></article><article><b>M</b><h3>MODIFIE</h3><p>Reprends la main.</p></article><article><b>E</b><h3>EXPLIQUE</h3><p>Prouve que tu as appris.</p></article></div></section>
+
+<section class="ideas" id="idees"><div class="section-index">03 / LES IDÉES</div>
+<a class="idea leadership" href="article-leadership.html"><span>DIRIGER / 08 MIN</span><h2>UNE ÉCOLE<br>POSSÈDE TOUJOURS<br><em>DEUX ORGANIGRAMMES.</em></h2><p>Le premier dit qui dirige. Le second révèle qui influence.</p><b>↗</b></a>
+<div class="photo library"><img src="https://cdn.loc.gov/service/pnp/cph/3a00000/3a07000/3a07900/3a07933v.jpg" alt="Visite à la Library of Congress, 1899"><small>Frances Benjamin Johnston, 1899 · Library of Congress · domaine public</small></div>
+<a class="idea explain" href="article-expliquer.html"><span>ÉVALUER / 06 MIN</span><h2>EXPLIQUER</h2><h3>La nouvelle preuve<br>d’apprentissage.</h3><p>Quand l’IA peut produire le devoir, l’oral retrouve une fonction décisive.</p><b>↗</b></a>
 </section>
 
-<section class="thought" id="penser">
-  <div class="thought-no">02</div>
-  <p class="eyebrow">UNE PENSÉE À DÉPLIER</p>
-  <blockquote>« Nous utilisons l’intelligence artificielle pour gagner du temps.<br><em>Mais savons-nous encore ce que nous voulons faire du temps gagné&nbsp;?</em> »</blockquote>
-  <div class="signature">— Alan Yvon</div>
-  <button class="unfold" id="unfold">DÉPLIER LA RÉFLEXION ↓</button>
-  <p class="hidden-thought" id="hiddenThought">Le progrès technique ne devient progrès éducatif que lorsqu’il libère du temps pour une activité intellectuelle plus haute : questionner, comparer, créer, expliquer. Déléguer n’a de sens que si l’élève sait ce qu’il conserve sous sa responsabilité.</p>
-</section>
-
-<section class="prisme-section" id="transmettre">
-  <div class="side-title">UNE MÉTHODE</div>
-  <div class="prisme-head"><span>03</span><h2>PRISME</h2><p>Utiliser l’IA sans lui déléguer l’apprentissage.</p></div>
-  <div class="steps">
-    <article><b>P</b><h3>PENSE</h3><p>Commence sans la machine.</p></article>
-    <article><b>R</b><h3>RÉALISE</h3><p>Produis une première réponse.</p></article>
-    <article><b>I</b><h3>INTERROGE</h3><p>Demande objection et explication.</p></article>
-    <article><b>S</b><h3>SÉLECTIONNE</h3><p>Soumets l’IA à ton jugement.</p></article>
-    <article><b>M</b><h3>MODIFIE</h3><p>Reprends la main sur ton travail.</p></article>
-    <article><b>E</b><h3>EXPLIQUE</h3><p>Prouve que tu as appris.</p></article>
-  </div>
-</section>
-
-<section class="stories" id="diriger">
-  <div class="stories-head"><span>04 / LES IDÉES</span><h2>Lire moins.<br><em>Penser davantage.</em></h2></div>
-  <a class="story big" href="article-leadership.html"><span>DIRIGER · 08 MIN</span><h3>Une école possède toujours<br>deux organigrammes.</h3><p>Le premier dit qui dirige. Le second révèle qui influence.</p><b>↗</b></a>
-  <a class="story tall" href="article-expliquer.html"><span>ÉVALUER · 06 MIN</span><h3>Expliquer : la nouvelle preuve d’apprentissage.</h3><p>Quand l’IA peut produire le devoir, l’oral retrouve une fonction décisive.</p><b>↗</b></a>
-  <div class="story note"><span>AILLEURS · 03 MIN</span><h3>Interdire, encadrer, apprendre&nbsp;?</h3><p>Trois philosophies internationales de l’IA scolaire.</p><b>→</b></div>
-</section>
-
-<section class="terrain" id="regarder">
-  <span class="terrain-no">05</span>
-  <div><p class="eyebrow">DEPUIS LE TERRAIN</p><h2>Penser l’école<br><em>depuis l’école.</em></h2></div>
-  <p>Une situation réelle devient une question. La pratique rencontre la recherche. L’idée est expérimentée, discutée, puis seulement institutionnalisée.</p>
-</section>
-
-<section class="newsletter">
-  <span>LETTRE DU TEMPS D’APPRENDRE</span>
-  <h2>Recevoir un texte.<br>Pas une notification.</h2>
-  <form onsubmit="event.preventDefault()"><input type="email" placeholder="votre@email.fr"><button>JE M’INSCRIS ↗</button></form>
-</section>
-</main>
-
-<footer><span>LE TEMPS D’APPRENDRE</span><span>UNE REVUE DU COLLÈGE SÉVIGNÉ · PARIS</span><span>V0.1 · AOÛT 2026</span></footer>
-<script src="script.js"></script>
-</body></html>
+<section class="terrain" id="terrain"><div class="giant">04</div><div><span>DEPUIS LE TERRAIN</span><h2>PENSER L’ÉCOLE<br><em>DEPUIS L’ÉCOLE.</em></h2></div><p>Une situation réelle devient une question. La pratique rencontre la recherche. L’idée est testée, discutée, puis seulement institutionnalisée.</p></section>
+<section class="end"><span>LA LETTRE</span><h2>Recevoir un texte.<br><em>Pas une notification.</em></h2><form onsubmit="event.preventDefault()"><input placeholder="votre@email.fr"><button>S’INSCRIRE ↗</button></form></section>
+</main><footer><span>LE TEMPS D’APPRENDRE</span><span>V0.2 · AOÛT 2026</span></footer><script src="script.js"></script></body></html>
