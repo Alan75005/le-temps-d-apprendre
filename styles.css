@@ -1,5 +1,5 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}
-:root{--navy:#102a43;--navy2:#0b2034;--ivory:#f5f0e7;--paper:#fbf8f2;--gold:#a47a35;--red:#a47a35;--line:#cfc7bb;--muted:#6a7380;--serif:"Libre Caslon Display",Georgia,serif;--sans:"DM Sans",Arial,sans-serif;--mono:"IBM Plex Mono",monospace}
+:root{--navy:#102a43;--navy2:#0b2034;--ivory:#f5f0e7;--paper:#fbf8f2;--gold:#b53a32;--red:#b53a32;--line:#cfc7bb;--muted:#6a7380;--serif:"Libre Caslon Display",Georgia,serif;--sans:"DM Sans",Arial,sans-serif;--mono:"IBM Plex Mono",monospace}
 body{margin:0;background:var(--paper);color:var(--navy);font-family:var(--sans)}a{color:inherit}.site-shell{overflow:hidden}.topline{height:5px;background:var(--red)}
 .header{height:72px;border-bottom:1px solid rgba(16,42,67,.25);display:grid;grid-template-columns:1fr 1fr auto;align-items:center;padding:0 3vw;position:relative;z-index:30;background:rgba(251,248,242,.95);backdrop-filter:blur(12px)}
 .brand{display:flex;gap:12px;align-items:center;text-decoration:none}.brand-mark{width:32px;height:32px;border:1px solid;border-radius:50%;display:grid;place-items:center;font:700 12px var(--serif)}.brand-copy strong{display:block;font-size:9px;letter-spacing:.15em}.brand-copy span{display:block;margin-top:3px;font:9px var(--serif);color:var(--muted)}
@@ -160,3 +160,17 @@ body.home .index-btn{color:var(--ivory)}
   .cover-bottom{left:5vw;right:5vw;bottom:24px;grid-template-columns:repeat(3,1fr);gap:8px 12px}
   .cover-bottom span{border-right:0!important}
 }
+
+
+/* V0.9 — rouge + image d’accueil */
+body.home .topline{background:var(--red)}
+.permanent-cover .kicker,.cover-frequency,.manifesto-word,.permanent-cover .home-manifesto a,.permanent-cover .typewriter-line{color:#d85a50}
+.permanent-cover .typewriter-line i{background:#d85a50}
+.cover-seal{border-color:#d85a50;color:#d85a50}
+.cover-photo{position:absolute;right:4.2vw;top:27vh;width:min(31vw,455px);margin:0;z-index:2}
+.cover-photo img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;filter:grayscale(1) contrast(1.03);box-shadow:0 18px 60px rgba(0,0,0,.30)}
+.permanent-cover .home-title{z-index:5}
+.permanent-cover .home-title h1{max-width:72vw}
+@media(max-width:1100px){.cover-photo{width:min(34vw,390px);top:30vh}}
+@media(max-width:900px){.cover-photo{right:5vw;top:48vh;width:38vw}.cover-seal{top:18vh}}
+@media(max-width:650px){.cover-photo{right:5vw;top:43vh;width:55vw}.cover-photo img{aspect-ratio:1.15/1}.cover-seal{top:58vh}.permanent-cover .home-manifesto{bottom:112px}}
