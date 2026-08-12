@@ -1,8 +1,178 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Le Temps d’apprendre — N°01</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display:ital@0;1&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body>
-<header><b>LE TEMPS D’APPRENDRE</b><span>REVUE D’ÉDUCATION, DE TRANSMISSION ET D’IDÉES</span><button>INDEX +</button></header>
-<main><section class="cover"><div class="issue">N°01<br>AUTOMNE 2026</div><img class="photo" src="https://cdn.loc.gov/service/pnp/cph/3a30000/3a39000/3a39500/3a39510r.jpg"><div class="title"><small>LE GRAND DOSSIER</small><h1>L’IA PEUT-ELLE<br>NOUS AIDER<br>À <i>PENSER</i></h1><p><span id="typed"></span><em></em></p></div><div class="lines"><div><b>DIRIGER</b><br>Une école possède toujours deux organigrammes.</div><div><b>ÉVALUER</b><br>Expliquer : la nouvelle preuve d’apprentissage.</div><div><b>MÉTHODE</b><br>PRISME : utiliser l’IA sans lui déléguer l’apprentissage.</div></div><a href="#sommaire">OUVRIR LE NUMÉRO ↓</a></section>
-<section class="toc" id="sommaire"><div class="tochead"><small>N°01 / AUTOMNE 2026</small><h2>SOMMAIRE</h2><p>Des idées nées dans l’école,<br>pour penser l’école au-delà d’elle-même.</p></div>
-<div class="list"><a href="article-ia.html"><b>01</b><div><small>ESSAI · 12 MIN</small><h3>L’IA peut-elle nous aider à penser ?</h3><p>Ce que l’élève délègue ne doit pas être ce qu’il est venu apprendre.</p></div><i>↗</i></a><a href="article-leadership.html"><b>02</b><div><small>DIRIGER · 08 MIN</small><h3>Une école possède toujours deux organigrammes.</h3><p>Le premier dit qui dirige. Le second révèle qui influence.</p></div><i>↗</i></a><a href="article-expliquer.html"><b>03</b><div><small>ÉVALUER · 06 MIN</small><h3>Expliquer : la nouvelle preuve d’apprentissage.</h3><p>Quand la production ne suffit plus à prouver l’apprentissage.</p></div><i>↗</i></a><a href="#prisme"><b>04</b><div><small>MÉTHODE · 10 MIN</small><h3>PRISME</h3><p>Une discipline d’usage de l’intelligence artificielle.</p></div><i>↓</i></a><a href="#terrain"><b>05</b><div><small>TERRAIN · 04 MIN</small><h3>Penser l’école depuis l’école.</h3></div><i>↓</i></a></div></section>
-<section class="feature"><div class="num">01</div><div><small>LE GRAND DOSSIER</small><h2>CE QUE NOUS<br>NE DEVONS PAS<br><i>DÉLÉGUER.</i></h2><p>L’arrivée des IA génératives oblige l’école à poser une question plus fondamentale que celle de l’interdiction ou de l’autorisation.</p><a href="article-ia.html">ENTRER DANS LE DOSSIER ↗</a></div><img src="https://cdn.loc.gov/service/pnp/cph/3a10000/3a17000/3a17700/3a17788r.jpg"></section>
-<section class="prisme" id="prisme"><small>04 / MÉTHODE</small><h2>PRISME</h2><p>Utiliser l’IA <i>sans lui déléguer l’apprentissage.</i></p><div class="steps"><b>P<span>PENSE</span></b><b>R<span>RÉALISE</span></b><b>I<span>INTERROGE</span></b><b>S<span>SÉLECTIONNE</span></b><b>M<span>MODIFIE</span></b><b>E<span>EXPLIQUE</span></b></div></section>
-<section class="terrain" id="terrain"><div class="num">05</div><div><small>DEPUIS LE TERRAIN</small><h2>PENSER L’ÉCOLE<br><i>DEPUIS L’ÉCOLE.</i></h2></div><p>Une situation réelle devient une question. La pratique rencontre la recherche. L’idée est expérimentée, discutée, puis seulement institutionnalisée.</p></section></main><footer>LE TEMPS D’APPRENDRE <span>N°01 · AUTOMNE 2026</span></footer><script>const t="sans penser à notre place ?";let i=0,e=document.getElementById("typed");setTimeout(function f(){if(i<t.length){e.textContent+=t[i++];setTimeout(f,70+Math.random()*50)}},800)</script></body></html>
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#102a43">
+<meta name="description" content="Le Temps d'apprendre — une revue du Collège Sévigné. Penser l'école depuis l'école.">
+<title>Le Temps d’apprendre — Accueil</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=Libre+Caslon+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="home">
+<div class="site-shell">
+<div class="topline"></div>
+
+<header class="header">
+  <a href="index.html" class="brand">
+    <span class="brand-mark">S</span>
+    <span class="brand-copy"><strong>LE TEMPS D’APPRENDRE</strong><span>Une revue du Collège Sévigné · Paris</span></span>
+  </a>
+  <nav class="nav" aria-label="Navigation principale">
+    <a href="#revue">La revue</a>
+    <a href="#textes">Les textes</a>
+    <a href="#prisme-home">PRISME</a>
+    <a href="#rubriques">Rubriques</a>
+  </nav>
+  <button class="index-btn" aria-expanded="false">INDEX +</button>
+</header>
+
+<aside class="index-panel" aria-hidden="true">
+  <button class="index-close">FERMER ×</button>
+  <p class="kicker">Table des matières</p>
+  <h2>INDEX</h2>
+  <div class="index-links">
+    <a href="#revue"><b>01</b>La revue <span>Pourquoi elle existe</span></a>
+    <a href="numero-01.html"><b>02</b>N°01 <span>Automne 2026</span></a>
+    <a href="#textes"><b>03</b>Les textes <span>Essais · direction · évaluation</span></a>
+    <a href="#prisme-home"><b>04</b>PRISME <span>Méthode IA</span></a>
+    <a href="#rubriques"><b>05</b>Rubriques <span>Apprendre · enseigner · diriger...</span></a>
+  </div>
+</aside>
+
+<main>
+<section class="home-hero permanent-cover" id="revue">
+  <div class="cover-grid" aria-hidden="true"></div>
+  <div class="cover-spine" aria-hidden="true">LE TEMPS D’APPRENDRE · REVUE D’ÉDUCATION · PARIS</div>
+
+  <div class="cover-top">
+    <p class="kicker">UNE REVUE DU COLLÈGE SÉVIGNÉ · PARIS</p>
+    <p class="cover-frequency">IDÉES · RECHERCHE · TERRAIN · INTERNATIONAL</p>
+  </div>
+
+  <div class="home-title">
+    <h1>LE TEMPS<br>D’APPRENDRE</h1>
+    <p class="typewriter-line"><span id="home-typed"></span><i></i></p>
+  </div>
+
+  <div class="cover-signal" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="cover-seal">
+    <span>REVUE</span>
+    <b>SÉVIGNÉ</b>
+    <small>PARIS</small>
+  </div>
+
+  <div class="home-manifesto">
+    <span class="manifesto-word">MANIFESTE</span>
+    <p><strong>Penser l’école depuis l’école.</strong><br>
+    Une publication pour confronter l’expérience de terrain à la recherche, aux pratiques internationales et aux humanités.</p>
+    <a href="#dernier-numero">ENTRER DANS LA REVUE</a>
+  </div>
+
+  <div class="cover-bottom">
+    <span>APPRENDRE</span><span>ENSEIGNER</span><span>TRANSFORMER</span>
+    <span>DIRIGER</span><span>AILLEURS</span><span>PENSER</span>
+  </div>
+</section>
+
+<section class="home-statement">
+  <div class="statement-index">NOTRE<br>PARTI PRIS</div>
+  <blockquote>Pas un blog.<br>Pas un journal d’établissement.<br><em>Une revue d’idées.</em></blockquote>
+  <p>Expérience de terrain, recherche, pratiques internationales et philosophie : chaque texte part d’une question réelle et cherche à déplacer le regard.</p>
+</section>
+
+<section class="current-issue" id="dernier-numero">
+  <div class="issue-photo-wrap">
+    <img src="https://cdn.loc.gov/service/pnp/cph/3a30000/3a39000/3a39500/3a39510r.jpg" alt="Élèves dans une salle de classe, photographie historique">
+    <div class="photo-number">01</div>
+  </div>
+  <div class="issue-copy">
+    <p class="kicker">N°01 · AUTOMNE 2026</p>
+    <h2>APPRENDRE<br>À L’ÂGE<br><em>DE L’IA.</em></h2>
+    <p>Comment utiliser l’intelligence artificielle sans lui abandonner les opérations intellectuelles que l’école cherche précisément à développer&nbsp;?</p>
+    <div class="issue-lines">
+      <span>ESSAI</span><b>L’IA peut-elle nous aider à penser&nbsp;?</b>
+      <span>DIRIGER</span><b>Une école possède toujours deux organigrammes.</b>
+      <span>ÉVALUER</span><b>Expliquer : la nouvelle preuve d’apprentissage.</b>
+    </div>
+    <a class="red-link" href="numero-01.html">OUVRIR LE NUMÉRO</a>
+  </div>
+</section>
+
+<section class="home-ideas" id="textes">
+  <div class="ideas-heading">
+    <p class="kicker">DERNIERS TEXTES</p>
+    <h2>DES IDÉES<br>À METTRE<br><i>À L’ÉPREUVE.</i></h2>
+  </div>
+  <div class="ideas-list">
+    <a href="article-ia.html">
+      <span>01 / APPRENDRE</span>
+      <h3>L’IA peut-elle nous aider à penser&nbsp;?</h3>
+      <p>Ce que l’élève délègue ne doit pas être ce qu’il est venu apprendre.</p>
+      <b>12 MIN</b>
+    </a>
+    <a href="article-leadership.html">
+      <span>02 / DIRIGER</span>
+      <h3>Une école possède toujours deux organigrammes.</h3>
+      <p>Le premier dit qui dirige. Le second révèle qui influence.</p>
+      <b>08 MIN</b>
+    </a>
+    <a href="article-expliquer.html">
+      <span>03 / ÉVALUER</span>
+      <h3>Expliquer : la nouvelle preuve d’apprentissage.</h3>
+      <p>Quand la production ne suffit plus à prouver l’apprentissage.</p>
+      <b>06 MIN</b>
+    </a>
+  </div>
+</section>
+
+<section class="home-prisme" id="prisme-home">
+  <div class="prisme-title">
+    <p class="kicker light">UNE MÉTHODE</p>
+    <h2>PRISME</h2>
+    <p>Utiliser l’IA <em>sans lui déléguer l’apprentissage.</em></p>
+  </div>
+  <div class="home-steps">
+    <div><b>P</b><span>PENSE</span><small>d’abord</small></div>
+    <div><b>R</b><span>RÉALISE</span><small>par toi-même</small></div>
+    <div><b>I</b><span>INTERROGE</span><small>la machine</small></div>
+    <div><b>S</b><span>SÉLECTIONNE</span><small>avec jugement</small></div>
+    <div><b>M</b><span>MODIFIE</span><small>ton travail</small></div>
+    <div><b>E</b><span>EXPLIQUE</span><small>sans assistance</small></div>
+  </div>
+  <a href="numero-01.html#prisme">DÉCOUVRIR LA MÉTHODE</a>
+</section>
+
+<section class="rubriques" id="rubriques">
+  <div class="rubriques-title"><p class="kicker">LA REVUE</p><h2>SIX<br>PORTES<br>D’ENTRÉE.</h2></div>
+  <div class="rubriques-list">
+    <a href="#textes"><b>01</b><span>APPRENDRE</span><em>Cognition · attention · évaluation</em></a>
+    <a href="#textes"><b>02</b><span>ENSEIGNER</span><em>Pratiques · métier · transmission</em></a>
+    <a href="#prisme-home"><b>03</b><span>TRANSFORMER</span><em>IA · technologie · innovation</em></a>
+    <a href="article-leadership.html"><b>04</b><span>DIRIGER</span><em>Leadership · management · culture</em></a>
+    <a href="numero-01.html#sommaire"><b>05</b><span>AILLEURS</span><em>Écoles · systèmes · international</em></a>
+    <a href="#revue"><b>06</b><span>PENSER</span><em>Philosophie · finalités · humanités</em></a>
+  </div>
+</section>
+
+<section class="home-closing">
+  <p class="mono">LE TEMPS D’APPRENDRE / PARIS / 2026</p>
+  <h2>Penser l’école<br><em>depuis l’école.</em></h2>
+  <p>Une publication du Collège Sévigné.</p>
+</section>
+</main>
+
+<footer class="footer">
+  <span>LE TEMPS D’APPRENDRE · V0.8</span>
+  <span>Une revue du Collège Sévigné · Paris</span>
+  <span>Direction éditoriale · Alan Yvon</span>
+</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

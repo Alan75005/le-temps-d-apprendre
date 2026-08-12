@@ -1,2 +1,6 @@
-const panel=document.getElementById("menuPanel");document.getElementById("menuBtn").onclick=()=>panel.classList.add("open");document.getElementById("closeBtn").onclick=()=>panel.classList.remove("open");panel.querySelectorAll("a").forEach(a=>a.onclick=()=>panel.classList.remove("open"));
-const el=document.getElementById("typeText");const text=el.dataset.text;let i=0;function type(){if(i<text.length){el.textContent+=text[i++];setTimeout(type,58+Math.random()*55)}}setTimeout(type,900);
+const panel=document.querySelector(".index-panel"),openBtn=document.querySelector(".index-btn"),closeBtn=document.querySelector(".index-close");
+function indexState(open){if(!panel)return;panel.classList.toggle("open",open);panel.setAttribute("aria-hidden",String(!open));openBtn?.setAttribute("aria-expanded",String(open));document.body.style.overflow=open?"hidden":""}
+openBtn?.addEventListener("click",()=>indexState(true));closeBtn?.addEventListener("click",()=>indexState(false));panel?.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>indexState(false)));document.addEventListener("keydown",e=>{if(e.key==="Escape")indexState(false)});
+function typeInto(el,text,min=55,max=115,delay=450){if(!el)return; if(window.matchMedia("(prefers-reduced-motion: reduce)").matches){el.textContent=text;return} let i=0;el.textContent="";setTimeout(function tick(){if(i<text.length){el.textContent+=text[i++];setTimeout(tick,min+Math.random()*(max-min))}},delay)}
+typeInto(document.getElementById("home-typed"),"le temps d’apprendre",65,125,600);
+typeInto(document.getElementById("typed"),"sans penser à notre place ?",60,110,800);
