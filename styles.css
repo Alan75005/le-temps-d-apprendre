@@ -63,3 +63,51 @@ a{color:inherit}button,input{font:inherit}.skip{position:absolute;left:-9999px;t
   .newsletter{padding:75px 24px;gap:38px}.newsletter h2{font-size:clamp(3.2rem,13vw,5rem)}.newsletter-form>div{display:block}.newsletter-form button{padding:16px 0}.site-footer{padding:60px 24px 32px}
   .article-shell{padding:110px 20px 90px}.article-shell h1{font-size:clamp(3.8rem,16vw,6rem)}.article-byline{flex-wrap:wrap}.longform{margin-top:55px}.article-callout{margin:45px -6px}.prisme-detail{padding-top:70px;padding-bottom:70px}.prisme-detail-grid{grid-template-columns:1fr}.prisme-detail-grid div{min-height:0}
 }
+
+/* V1.2 — Hero plus vivant : mouvement cinématographique assumé */
+.hero-film{
+  transform-origin:55% 48%;
+  will-change:transform,filter;
+  animation:heroCamera 18s cubic-bezier(.42,0,.22,1) infinite;
+}
+.hero-fallback{
+  transform-origin:55% 48%;
+  animation:heroCamera 18s cubic-bezier(.42,0,.22,1) infinite;
+}
+.hero-shade::after{
+  content:"";
+  position:absolute;
+  inset:-12%;
+  pointer-events:none;
+  background:radial-gradient(circle at 72% 35%,rgba(244,240,232,.16),transparent 31%);
+  mix-blend-mode:soft-light;
+  opacity:.38;
+  animation:heroLight 13s ease-in-out infinite;
+}
+.hero-grain{
+  animation:grainAlive .7s steps(2,end) infinite;
+}
+@keyframes heroCamera{
+  0%{transform:scale(1.045) translate3d(0,0,0);filter:contrast(1.01) brightness(.98)}
+  24%{transform:scale(1.095) translate3d(-1.35%,-.65%,0);filter:contrast(1.025) brightness(1.01)}
+  52%{transform:scale(1.145) translate3d(1.55%,-1.15%,0);filter:contrast(1.04) brightness(1.025)}
+  76%{transform:scale(1.09) translate3d(2.15%,.45%,0);filter:contrast(1.025) brightness(1)}
+  100%{transform:scale(1.045) translate3d(0,0,0);filter:contrast(1.01) brightness(.98)}
+}
+@keyframes heroLight{
+  0%,100%{transform:translate3d(-3%,1%,0) scale(1);opacity:.25}
+  45%{transform:translate3d(3%,-2%,0) scale(1.08);opacity:.48}
+  72%{transform:translate3d(1%,2%,0) scale(1.03);opacity:.34}
+}
+@keyframes grainAlive{
+  0%{background-position:0 0;opacity:.12}
+  50%{background-position:11px -7px;opacity:.17}
+  100%{background-position:-8px 6px;opacity:.13}
+}
+@media(max-width:720px){
+  .hero-film,.hero-fallback{animation-duration:14s;transform-origin:62% 48%}
+  .hero-shade::after{animation-duration:10s}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-film,.hero-fallback,.hero-shade::after,.hero-grain{animation:none!important}
+}
