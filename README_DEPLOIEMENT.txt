@@ -1,15 +1,12 @@
-LE TEMPS D’APPRENDRE — V1 — CORRECTIF MOBILE
+LE TEMPS D’APPRENDRE — V1
 
-ZIP autonome. Décompresser puis téléverser tous les fichiers à la racine.
+Prototype statique prêt pour Cloudflare Pages.
 
-Important : cette version n’utilise AUCUNE image contenant du texte dans le hero.
-Le hero est construit en HTML/CSS, ce qui évite les superpositions observées sur mobile.
+Déploiement manuel :
+1. Décompresser le ZIP.
+2. Dans Cloudflare > Workers & Pages > projet > Deployments > Upload and deploy.
+3. Déposer TOUS les fichiers du dossier à la racine du déploiement.
+4. Vérifier que index.html, styles.css, app.js, hero-film.mp4 et les trois pages article sont présents.
+5. Cliquer sur Deploy.
 
-Fichiers :
-- index.html
-- revue.css
-- revue.js
-- article-ia.html
-- article-organigrammes.html
-- article-expliquer.html
-- README_DEPLOIEMENT.txt
+Le fond de la page d’accueil est un MP4 léger créé à partir de la photographie transmise, avec animation lente et grain discret. hero-poster.jpg sert de repli si la vidéo ne se lance pas.

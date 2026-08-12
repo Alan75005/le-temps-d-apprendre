@@ -2,155 +2,181 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#112641">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0d2039">
   <meta name="description" content="Le Temps d’apprendre — une revue du Collège Sévigné. Penser l’école depuis l’école.">
-  <title>Le Temps d’apprendre — V1</title>
+  <title>Le Temps d’apprendre — Collège Sévigné</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=Italiana&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="revue.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <a class="skip" href="#main">Aller au contenu</a>
-<header class="masthead">
-  <a class="school" href="#top" aria-label="Accueil">
+
+<header class="site-header" id="top">
+  <a class="school-brand" href="#top" aria-label="Accueil">
     <span class="monogram">CS</span>
-    <span class="school-copy"><strong>COLLÈGE SÉVIGNÉ</strong><small>Paris · depuis 1880</small></span>
+    <span class="school-name"><strong>COLLÈGE SÉVIGNÉ</strong><small>PARIS · DEPUIS 1880</small></span>
   </a>
-  <div class="issue">N° 00 · ÉDITION PILOTE · 2026</div>
-  <button class="index-button" aria-expanded="false" aria-controls="index-panel">INDEX <span>+</span></button>
+  <button class="index-button" type="button" aria-expanded="false" aria-controls="index-panel">INDEX <b>+</b></button>
 </header>
 
-<aside id="index-panel" class="index-panel" aria-hidden="true">
-  <button class="close-index" aria-label="Fermer">×</button>
-  <p class="mono gold">TABLE DES MATIÈRES</p>
-  <nav>
-    <a href="#apprendre"><span>01</span><b>APPRENDRE</b><em>Cognition · évaluation</em></a>
-    <a href="#enseigner"><span>02</span><b>ENSEIGNER</b><em>Pratiques · métier</em></a>
-    <a href="#transformer"><span>03</span><b>TRANSFORMER</b><em>IA · innovation</em></a>
-    <a href="#diriger"><span>04</span><b>DIRIGER</b><em>Leadership · culture</em></a>
-    <a href="#ailleurs"><span>05</span><b>AILLEURS</b><em>International</em></a>
-    <a href="#penser"><span>06</span><b>PENSER</b><em>Philosophie · finalités</em></a>
+<div class="index-panel" id="index-panel" aria-hidden="true">
+  <div class="index-toolbar">
+    <span>TABLE DES MATIÈRES</span>
+    <button class="index-close" type="button" aria-label="Fermer l’index">×</button>
+  </div>
+  <nav class="index-nav" aria-label="Index de la revue">
+    <a href="#dossier"><span>01</span><strong>APPRENDRE</strong><em>Cognition · évaluation</em></a>
+    <a href="#articles"><span>02</span><strong>ENSEIGNER</strong><em>Pratiques · métier</em></a>
+    <a href="#prisme"><span>03</span><strong>TRANSFORMER</strong><em>IA · innovation</em></a>
+    <a href="#articles"><span>04</span><strong>DIRIGER</strong><em>Leadership · culture</em></a>
+    <a href="#ailleurs"><span>05</span><strong>AILLEURS</strong><em>International</em></a>
+    <a href="#penser"><span>06</span><strong>PENSER</strong><em>Philosophie · finalités</em></a>
   </nav>
   <p class="index-signature">le temps d’apprendre_</p>
-</aside>
+</div>
 
 <main id="main">
-  <section id="top" class="hero">
-    <div class="hero-grid" aria-hidden="true"></div>
-    <div class="prism-lines" aria-hidden="true">
-      <i></i><i></i><i></i><i></i><i></i><i></i>
+  <section class="hero" aria-labelledby="hero-title">
+    <video class="hero-film" autoplay muted loop playsinline preload="metadata" poster="hero-poster.jpg" aria-hidden="true">
+      <source src="hero-film.mp4" type="video/mp4">
+    </video>
+    <div class="hero-fallback" aria-hidden="true"></div>
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-grain" aria-hidden="true"></div>
+
+    <div class="hero-copy">
+      <p class="eyebrow light">UNE REVUE DU COLLÈGE SÉVIGNÉ</p>
+      <p class="typed-brand">le temps d’apprendre<span>_</span></p>
+      <h1 id="hero-title">LE TEMPS<br>D’APPRENDRE</h1>
+      <p class="hero-tagline">Penser l’école depuis l’école.</p>
+      <a class="outline-cta" href="#dossier">DÉCOUVRIR LA REVUE <span>→</span></a>
     </div>
-    <div class="hero-brand">
-      <p class="eyebrow">UNE REVUE DU COLLÈGE SÉVIGNÉ</p>
-      <h1>LE TEMPS<br>D’APPRENDRE</h1>
-      <p class="typewriter">le temps d’apprendre<span>_</span></p>
-      <p class="tagline">Penser l’école depuis l’école.</p>
+
+    <div class="hero-issue">
+      <span>00</span>
+      <p>ÉDITION<br>PILOTE<br>2026</p>
     </div>
-    <article class="hero-story">
-      <p class="story-label">DOSSIER · APPRENDRE À L’ÂGE DE L’IA</p>
+
+    <a class="scroll-cue" href="#dossier" aria-label="Descendre vers le dossier">SCROLL <i></i> ↓</a>
+  </section>
+
+  <section class="dossier" id="dossier">
+    <article class="dossier-story">
+      <p class="eyebrow">DOSSIER · APPRENDRE À L’ÂGE DE L’IA</p>
       <h2>L’IA peut-elle aider nos élèves sans penser à leur place&nbsp;?</h2>
-      <p>À mesure que les machines savent écrire, raisonner et expliquer, l’école doit apprendre aux élèves ce qu’ils ne doivent pas déléguer.</p>
-      <a href="article-ia.html">Lire l’essai →</a>
+      <p class="standfirst">À mesure que les machines écrivent, raisonnent et expliquent, l’école doit apprendre aux élèves une compétence nouvelle&nbsp;: savoir ce qu’ils ne doivent pas déléguer.</p>
+      <div class="story-footer"><span>ALAN YVON</span><span>12 MIN</span><a href="article-ia.html">LIRE L’ESSAI →</a></div>
     </article>
-    <div class="edition-stamp"><span>V1</span><small>ÉDITION<br>FONDATRICE</small></div>
-    <a class="scroll" href="#apprendre" aria-label="Continuer">↓</a>
-  </section>
 
-  <section id="apprendre" class="question reveal">
-    <p class="section-num">01 · APPRENDRE</p>
-    <h2>Que reste-t-il à l’élève<br>quand la machine sait répondre&nbsp;?</h2>
-    <p>Une responsabilité nouvelle&nbsp;: <strong>rester l’auteur de son apprentissage.</strong></p>
-  </section>
-
-  <section id="transformer" class="prisme reveal">
-    <header>
-      <p class="section-num">03 · TRANSFORMER</p>
-      <p class="mono gold">UNE MÉTHODE DE LITTÉRATIE COGNITIVE DE L’IA</p>
+    <aside class="prisme-card" id="prisme">
+      <p class="eyebrow pale">MÉTHODE</p>
       <h2>PRISME</h2>
-      <p class="prisme-lead">Utiliser l’intelligence artificielle <em>sans lui déléguer l’apprentissage.</em></p>
-    </header>
-    <div class="prisme-grid" aria-label="Méthode PRISME">
-      <button class="prisme-card active" data-step="0"><span>P</span><h3>PENSE</h3><p>Mobilise d’abord tes propres connaissances.</p></button>
-      <button class="prisme-card" data-step="1"><span>R</span><h3>RÉALISE</h3><p>Produis une première réponse sans IA.</p></button>
-      <button class="prisme-card" data-step="2"><span>I</span><h3>INTERROGE</h3><p>Questionne, explique, contredis ou teste avec l’IA.</p></button>
-      <button class="prisme-card" data-step="3"><span>S</span><h3>SÉLECTIONNE</h3><p>Juge ce qui est juste, faux, pertinent ou vérifiable.</p></button>
-      <button class="prisme-card" data-step="4"><span>M</span><h3>MODIFIE</h3><p>Améliore toi-même ton travail.</p></button>
-      <button class="prisme-card" data-step="5"><span>E</span><h3>EXPLIQUE</h3><p>Sans IA, restitue et prouve que tu as compris.</p></button>
-    </div>
-    <div class="prisme-focus" aria-live="polite">
-      <span>ÉTAPE 01</span>
-      <blockquote>Avant de demander à la machine, commence par produire quelque chose qui t’appartient.</blockquote>
-    </div>
-    <a class="prisme-link" href="article-ia.html">Lire le manifeste PRISME →</a>
+      <div class="prisme-mini" aria-label="Étapes de la méthode PRISME">
+        <div><b>P</b><span>PENSE</span></div>
+        <div><b>R</b><span>RÉALISE</span></div>
+        <div><b>I</b><span>INTERROGE</span></div>
+        <div><b>S</b><span>SÉLECTIONNE</span></div>
+        <div><b>M</b><span>MODIFIE</span></div>
+        <div><b>E</b><span>EXPLIQUE</span></div>
+      </div>
+      <p>Utiliser l’intelligence artificielle <strong>sans lui déléguer l’apprentissage.</strong></p>
+      <a href="article-ia.html#prisme-detail">DÉCOUVRIR PRISME →</a>
+    </aside>
   </section>
 
-  <section id="diriger" class="stories reveal">
-    <header>
-      <p class="section-num dark">LES IDÉES</p>
-      <h2>Trois questions<br>pour déplacer le regard.</h2>
-    </header>
-    <div class="stories-grid">
-      <article class="story-primary">
-        <p class="mono gold">DIRIGER · 8 MIN</p>
-        <h3>Une école possède toujours deux organigrammes.</h3>
-        <p>Le premier dit qui dirige. Le second révèle qui influence. Transformer une institution exige de connaître les deux.</p>
-        <a href="article-organigrammes.html">Lire →</a>
+  <section class="prisme-experience" aria-labelledby="prisme-title">
+    <div class="prisme-heading">
+      <p class="eyebrow light">UNE GRAMMAIRE D’USAGE</p>
+      <h2 id="prisme-title">Penser d’abord.<br>Utiliser l’IA ensuite.<br><em>Juger toujours.</em></h2>
+    </div>
+    <div class="prisme-steps" role="list">
+      <button class="p-step active" type="button" data-step="0" role="listitem"><span>P</span><b>PENSE</b></button>
+      <button class="p-step" type="button" data-step="1" role="listitem"><span>R</span><b>RÉALISE</b></button>
+      <button class="p-step" type="button" data-step="2" role="listitem"><span>I</span><b>INTERROGE</b></button>
+      <button class="p-step" type="button" data-step="3" role="listitem"><span>S</span><b>SÉLECTIONNE</b></button>
+      <button class="p-step" type="button" data-step="4" role="listitem"><span>M</span><b>MODIFIE</b></button>
+      <button class="p-step" type="button" data-step="5" role="listitem"><span>E</span><b>EXPLIQUE</b></button>
+    </div>
+    <div class="step-reading" aria-live="polite">
+      <span class="step-num">01 / 06</span>
+      <p class="step-text">Mobilise d’abord tes propres connaissances. L’IA n’entre pas encore dans la pièce.</p>
+    </div>
+  </section>
+
+  <section class="articles" id="articles">
+    <div class="section-intro">
+      <p class="eyebrow">LES IDÉES</p>
+      <h2>Déplacer<br>le regard.</h2>
+      <p>Des textes courts ou longs, nés du terrain, confrontés à la recherche et ouverts au débat.</p>
+    </div>
+    <div class="article-grid">
+      <article class="article-card dominant">
+        <div class="number">01</div>
+        <p class="eyebrow">DIRIGER</p>
+        <h3><a href="article-organigrammes.html">Une école possède toujours deux organigrammes.</a></h3>
+        <p>Pourquoi l’influence compte parfois davantage que la hiérarchie pour transformer une institution.</p>
+        <footer><span>ALAN YVON · 10 MIN</span><a href="article-organigrammes.html">LIRE →</a></footer>
       </article>
-      <article id="enseigner">
-        <p class="mono gold">ÉVALUER · 6 MIN</p>
-        <h3>Expliquer&nbsp;: la nouvelle preuve d’apprentissage.</h3>
-        <p>Lorsque l’IA peut produire le devoir, l’oral court peut rendre visible le raisonnement de l’élève.</p>
-        <a href="article-expliquer.html">Lire →</a>
+      <article class="article-card">
+        <div class="number">02</div>
+        <p class="eyebrow">ENSEIGNER</p>
+        <h3><a href="article-expliquer.html">Expliquer&nbsp;: la nouvelle preuve d’apprentissage.</a></h3>
+        <p>Lorsque l’IA peut produire le devoir, l’oral peut rendre visible le raisonnement de l’élève.</p>
+        <footer><span>ALAN YVON · 8 MIN</span><a href="article-expliquer.html">LIRE →</a></footer>
       </article>
-      <article id="ailleurs">
-        <p class="mono gold">AILLEURS · À VENIR</p>
+      <article class="article-card tinted" id="ailleurs">
+        <div class="number">03</div>
+        <p class="eyebrow pale">AILLEURS</p>
         <h3>L’IA à l’école&nbsp;: le monde choisit-il des chemins différents&nbsp;?</h3>
-        <p>Interdire, encadrer, généraliser&nbsp;: comparer les doctrines qui émergent à l’international.</p>
-        <span class="coming">DOSSIER EN PRÉPARATION</span>
+        <p>Comparer les doctrines scolaires qui émergent à l’international, sans transformer la comparaison en classement.</p>
+        <footer><span>LA RÉDACTION · À VENIR</span></footer>
       </article>
     </div>
   </section>
 
-  <section class="terrain reveal">
-    <div class="terrain-index">04</div>
-    <div>
-      <p class="section-num">DEPUIS LE TERRAIN</p>
-      <h2>Une revue qui ne pense pas l’école de l’extérieur.</h2>
-      <p>Les idées publiées ici naissent de l’expérience quotidienne d’un établissement scolaire. Elles sont confrontées à la recherche, discutées, expérimentées et mises à l’épreuve.</p>
-      <p class="typewriter terrain-type">terrain → recherche → expérimentation → partage_</p>
+  <section class="terrain" aria-labelledby="terrain-title">
+    <div class="terrain-image" aria-hidden="true"></div>
+    <div class="terrain-content">
+      <p class="eyebrow light">DEPUIS LE TERRAIN</p>
+      <h2 id="terrain-title">Une revue qui ne pense pas l’école de l’extérieur.</h2>
+      <p>Les idées publiées ici naissent aussi de l’expérience quotidienne d’un établissement scolaire. Elles sont confrontées à la recherche, expérimentées, discutées et mises à l’épreuve.</p>
+      <p class="type-line">terrain → recherche → expérimentation → partage_</p>
     </div>
   </section>
 
-  <section id="penser" class="think reveal">
-    <div class="giant">PENSER</div>
-    <div class="think-copy">
-      <p class="section-num">06 · PENSER</p>
+  <section class="penser" id="penser">
+    <div class="ghost-word" aria-hidden="true">PENSER</div>
+    <div class="penser-copy">
+      <p class="eyebrow">06 · PENSER</p>
       <blockquote>«&nbsp;Travaillons à bien penser&nbsp;: voilà le principe de la morale.&nbsp;»</blockquote>
-      <p class="author">Blaise Pascal</p>
+      <cite>Blaise Pascal</cite>
       <p>Une école ne transmet pas seulement des réponses. Elle forme une manière de regarder, de distinguer et de juger.</p>
     </div>
   </section>
 
-  <section class="newsletter reveal">
+  <section class="newsletter">
     <div>
-      <p class="section-num dark">RECEVOIR LA REVUE</p>
+      <p class="eyebrow light">RECEVOIR LA REVUE</p>
       <h2>Une idée à lire.<br>Une question à poursuivre.</h2>
     </div>
-    <form onsubmit="return false">
-      <label for="email">Votre adresse électronique</label>
-      <div class="email-row"><input id="email" type="email" placeholder="prenom@exemple.fr"><button type="submit">S’ABONNER →</button></div>
-      <small>V1 · formulaire de démonstration non actif.</small>
+    <form class="newsletter-form" onsubmit="return false">
+      <label for="mail">Votre adresse électronique</label>
+      <div><input id="mail" type="email" placeholder="prenom@exemple.fr"><button type="submit">S’ABONNER →</button></div>
+      <small>Prototype V1 · formulaire non actif.</small>
     </form>
   </section>
 </main>
 
-<footer>
-  <div><strong>LE TEMPS D’APPRENDRE</strong><span class="typewriter small">le temps d’apprendre</span></div>
+<footer class="site-footer">
+  <div class="footer-title"><strong>LE TEMPS D’APPRENDRE</strong><span>le temps d’apprendre_</span></div>
   <p>Une revue du Collège Sévigné · Paris</p>
-  <small>Édition fondatrice V1 · 2026</small>
+  <nav><a href="#">À PROPOS</a><a href="#">CHARTE</a><a href="#">CONTACT</a><a href="#">MENTIONS LÉGALES</a></nav>
+  <small>Prototype éditorial V1 · 2026</small>
 </footer>
-<script src="revue.js"></script>
+
+<script src="app.js"></script>
 </body>
 </html>
